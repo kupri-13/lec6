@@ -20,7 +20,14 @@ padding-top: 40px;
     height: 150px;
     position: absolute;
     top: 500px;
-    left: 400px
+    left: 400px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
 }
 
 .mn{
@@ -29,4 +36,29 @@ padding-top: 40px;
     position: absolute;
     top: 100px;
     left: 100px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
 }
+
+@keyframes move {
+    0%  {top: 500px; left: 450px;}
+    25% {left: 500px;}
+    50% {left: 550px;}
+    75% {left: 500px;}
+    100% {left: 450px}
+}
+        
+@keyframes rotate {
+
+}
+
+.mn:hover{
+    width: 200px;
+    height: 200px; 
+
+}
+
